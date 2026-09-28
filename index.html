@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>gameStoB | Home</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <main class="home-page">
+      <section class="hero-carousel">
+        <div class="carousel-track">
+          <div class="carousel-slide active">
+            <img src="images/Banner_Cyberpunk 2077.png" alt="Cyberpunk 2077" />
+
+            <div class="hero-overlay">
+              <span class="hero-tag"> FEATURED GAME </span>
+
+              <h1>
+                Cyberpunk 2077
+                <br />
+                Phantom Liberty
+              </h1>
+
+              <p>
+                Experience the ultimate spy-thriller expansion. Return as
+                mercenary V and take on a mission of high-stakes espionage.
+              </p>
+
+              <div class="hero-price">
+                <span class="old-price"> Rp 499.000 </span>
+
+                <h2>Rp 249.500</h2>
+              </div>
+
+              <button
+                class="btn btn-primary"
+                onclick="
+                  addGameToCart({
+                    id: 'Cyberpunk 2077',
+                    name: 'Cyberpunk 2077 Phantom Liberty',
+                    price: 249500,
+                    image: 'images/Banner_Cyberpunk 2077.png',
+                  })
+                "
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <img
+              src="images/Banner_God of War Ragnarok.png"
+              alt="God of War Ragnarok"
+            />
+
+            <div class="hero-overlay">
+              <span class="hero-tag"> FEATURED GAME </span>
+
+              <h1>
+                God of War
+                <br />
+                Ragnarok
+              </h1>
+
+              <p>
+                Continue Kratos and Atreus' legendary adventure through the Nine
+                Realms.
+              </p>
+
+              <div class="hero-price">
+                <span class="old-price"> Rp 799.000 </span>
+
+                <h2>Rp 499.000</h2>
+              </div>
+
+              <button
+                class="btn btn-primary"
+                onclick="
+                  addGameToCart({
+                    id: 'God of War Ragnarok',
+                    name: 'God of War Ragnarok',
+                    price: 499000,
+                    image: 'images/Banner_God of War Ragnarok.png',
+                  })
+                "
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="images/Banner_Elden Ring.png" alt="Elden Ring" />
+
+            <div class="hero-overlay">
+              <span class="hero-tag"> FEATURED GAME </span>
+
+              <h1>
+                Elden Ring
+                <br />
+                Shadow of the Erdtree
+              </h1>
+
+              <p>Journey into the Realm of Shadow and uncover new mysteries.</p>
+
+              <div class="hero-price">
+                <span class="old-price"> Rp 699.000 </span>
+
+                <h2>Rp 449.000</h2>
+              </div>
+
+              <button
+                class="btn btn-primary"
+                onclick="
+                  addGameToCart({
+                    id: 'Elden Ring',
+                    name: 'Elden Ring Shadow of the Erdtree',
+                    price: 449000,
+                    image: 'images/Banner_Elden Ring.png',
+                  })
+                "
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-btn prev">❮</button>
+
+        <button class="carousel-btn next">❯</button>
+
+        <div class="carousel-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+
+      <section class="home-section">
+        <div class="section-header">
+          <div>
+            <h2>
+              <i class="fa-solid fa-bolt"></i>
+              Latest Releases
+            </h2>
+
+            <p>Fresh from the digital oven</p>
+          </div>
+
+          <a href="products.html" class="view-all"> View All </a>
+        </div>
+
+        <div class="latest-grid">
+          <div class="game-card">
+            <span class="discount-badge"> -25% </span>
+
+            <img
+              src="images/Product_Street Fighter 6.png"
+              alt="Street Fighter 6"
+            />
+
+            <div class="game-info">
+              <h3>Street Fighter 6</h3>
+
+              <div class="card-meta">
+                <span> Fighting </span>
+
+                <span> ⭐ 4.7 </span>
+              </div>
+
+              <div class="price">Rp 674.250</div>
+
+              <button
+                class="btn btn-primary"
+                onclick="
+                  addGameToCart({
+                    id: 'Street Fighter 6',
+                    name: 'Street Fighter 6',
+                    price: 674250,
+                    image: 'images/Product_Street Fighter 6.png',
+                  })
+                "
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <img
+              src="images/Product_Final Fantasy XVI.png"
+              alt="Final Fantasy XVI"
+            />
+
+            <div class="game-info">
+              <h3>Final Fantasy XVI</h3>
+
+              <div class="card-meta">
+                <span> Action RPG </span>
+
+                <span> ⭐ 4.9 </span>
+              </div>
+
+              <div class="price">Rp 1.049.000</div>
+
+              <button
+                class="btn btn-primary"
+                onclick="
+                  addGameToCart({
+                    id: 'Final Fantasy XVI',
+                    name: 'Final Fantasy XVI',
+                    price: 1049000,
+                    image: 'images/Product_Final Fantasy XVI.png',
+                  })
+                "
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <img
+              src="images/Product_Resident Evil 4.png"
+              alt="Resident Evil 4"
+            />
+
+            <div class="game-info">
+              <h3>Resident Evil 4</h3>
+
+              <div class="card-meta">
+                <span> Horror </span>
+
+                <span> ⭐ 4.8 </span>
+              </div>
+
+              <div class="price">Rp 899.000</div>
+
+              <button
+                class="btn btn-primary"
+                onclick="
+                  addGameToCart({
+                    id: 'Resident Evil 4',
+                    name: 'Resident Evil 4',
+                    price: 899000,
+                    image: 'images/Product_Resident Evil 4.png',
+                  })
+                "
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <img
+              src="images/Product_Baldur’s Gate 3.png"
+              alt="Baldurs Gate 3"
+            />
+
+            <div class="game-info">
+              <h3>Baldur's Gate 3</h3>
+
+              <div class="card-meta">
+                <span> RPG </span>
+
+                <span> ⭐ 4.9 </span>
+              </div>
+
+              <div class="price">Rp 899.000</div>
+
+              <button
+                class="btn btn-primary"
+                onclick="
+                  addGameToCart({
+                    id: 'Baldurs Gate 3',
+                    name: 'Baldurs Gate 3',
+                    price: 899000,
+                    image: 'images/Product_Baldur’s Gate 3.png',
+                  })
+                "
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-section">
+        <div class="section-header">
+          <div>
+            <h2>
+              <i class="fa-solid fa-trophy"></i>
+              Best Sellers
+            </h2>
+
+            <p>Top legends of the leaderboard</p>
+          </div>
+        </div>
+
+        <div class="best-grid">
+          <div class="best-card">
+            <img src="images/Product_Elden Ring.png" alt="Elden Ring" />
+
+            <div class="best-content">
+              <span class="best-rank"> #1 BEST SELLER </span>
+
+              <h3>Elden Ring</h3>
+
+              <p>Masterpiece of open-world exploration and combat.</p>
+
+              <span class="best-price"> Rp 749.000 </span>
+            </div>
+          </div>
+
+          <div class="best-card">
+            <img src="images/Product_Starfield.png" alt="Starfield" />
+
+            <div class="best-content">
+              <span class="best-rank"> #2 BEST SELLER </span>
+
+              <h3>Starfield</h3>
+
+              <p>Forge your own destiny among the stars.</p>
+
+              <span class="best-price"> Rp 734.300 </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-section">
+        <div class="section-header">
+          <div>
+            <h2>
+              <i class="fa-solid fa-fire"></i>
+              Trending Now
+            </h2>
+
+            <p>What everyone is playing</p>
+          </div>
+        </div>
+
+        <div class="trending-grid">
+          <a href="products.html" class="trending-card">
+            <img src="images/Product_Baldur’s Gate 3.png" />
+
+            <div class="trending-info">
+              <h4>Baldur's Gate 3</h4>
+              <span>RPG</span>
+            </div>
+          </a>
+
+          <a href="products.html" class="trending-card">
+            <img src="images/Product_Final Fantasy XVI.png" />
+
+            <div class="trending-info">
+              <h4>Final Fantasy XVI</h4>
+              <span>Action RPG</span>
+            </div>
+          </a>
+
+          <a href="products.html" class="trending-card">
+            <img src="images/Product_Resident Evil 4.png" />
+
+            <div class="trending-info">
+              <h4>Resident Evil 4</h4>
+              <span>Horror</span>
+            </div>
+          </a>
+
+          <a href="products.html" class="trending-card">
+            <img src="images/Product_Street Fighter 6.png" />
+
+            <div class="trending-info">
+              <h4>Street Fighter 6</h4>
+              <span>Fighting</span>
+            </div>
+          </a>
+
+          <a href="products.html" class="trending-card">
+            <img src="images/Product_Starfield.png" />
+
+            <div class="trending-info">
+              <h4>Starfield</h4>
+              <span>Sci-Fi</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="home-section">
+        <div class="section-header">
+          <div>
+            <h2>
+              <i class="fa-solid fa-puzzle-piece"></i>
+              New DLCs & Expansions
+            </h2>
+
+            <p>Expand your adventures</p>
+          </div>
+
+          <a href="product_DLCs.html" class="view-all"> Explore All </a>
+        </div>
+
+        <div class="dlc-grid">
+          <div class="dlc-card">
+            <img
+              src="images/DLC_Shadow of the Erdtree.png"
+              alt="Shadow of the Erdtree"
+            />
+
+            <div class="dlc-overlay">
+              <span class="dlc-tag"> NEW DLC </span>
+
+              <h3>Shadow of the Erdtree</h3>
+
+              <p>
+                Continue your journey through the Lands Between and face new
+                challenges.
+              </p>
+
+              <button class="btn btn-primary claim-btn">Claim Now</button>
+            </div>
+          </div>
+
+          <div class="dlc-card">
+            <img src="images/DLC_Valhalla.png" alt="Valhalla" />
+
+            <div class="dlc-overlay">
+              <span class="dlc-tag"> EXPANSION </span>
+
+              <h3>God of War Valhalla</h3>
+
+              <p>
+                Face powerful enemies and uncover hidden secrets in Valhalla.
+              </p>
+
+              <button class="btn btn-primary claim-btn">Claim Now</button>
+            </div>
+          </div>
+
+          <div class="dlc-card">
+            <img
+              src="images/DLC_Night City Archives.png"
+              alt="Night City Archives"
+            />
+
+            <div class="dlc-overlay">
+              <span class="dlc-tag"> NEW CONTENT </span>
+
+              <h3>Night City Archives</h3>
+
+              <p>
+                Unlock hidden stories, missions and exclusive rewards in Night
+                City.
+              </p>
+
+              <button class="btn btn-primary claim-btn">Claim Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-section testimonial-section">
+        <div class="section-header">
+          <div>
+            <h2>
+              <i class="fa-solid fa-comments"></i>
+              What Gamers Say
+            </h2>
+            <p>Reviews from our community</p>
+          </div>
+        </div>
+
+        <div class="testimonial-wrapper">
+          <button class="testimonial-btn prev-review">❮</button>
+
+          <div class="testimonial-slider">
+            <div class="testimonial-track">
+              <div class="testimonial-page">
+                <div class="testimonial-card">
+                  <div class="user-avatar">A</div>
+                  <h3>Alex Chen</h3>
+                  <small>Cyberpunk 2077</small>
+                  <p>
+                    Purchased instantly and received the activation key in less
+                    than a minute. Excellent service.
+                  </p>
+                </div>
+
+                <div class="testimonial-card">
+                  <div class="user-avatar">S</div>
+                  <h3>Sarah Johnson</h3>
+                  <small>Elden Ring</small>
+                  <p>
+                    Huge game collection and amazing discounts every week.
+                    Highly recommended.
+                  </p>
+                </div>
+              </div>
+
+              <div class="testimonial-page">
+                <div class="testimonial-card">
+                  <div class="user-avatar">M</div>
+                  <h3>Michael Tan</h3>
+                  <small>Baldur's Gate 3</small>
+                  <p>
+                    Smooth checkout process and responsive customer support.
+                  </p>
+                </div>
+
+                <div class="testimonial-card">
+                  <div class="user-avatar">L</div>
+                  <h3>Lisa Wong</h3>
+                  <small>God of War Ragnarok</small>
+                  <p>
+                    Great prices and very fast delivery. Definitely my favorite
+                    game store.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="testimonial-btn next-review">❯</button>
+        </div>
+      </section>
+
+      <a href="purchase.html" class="floating-cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cartCountFloat">0</span>
+      </a>
+
+      <div id="downloadToast" class="download-toast">
+        <i class="fa-solid fa-circle-check"></i>
+
+        <div>
+          <h4>Download Successful</h4>
+          <p>Your DLC has been added to your library.</p>
+        </div>
+      </div>
+    </main>
+
+    <div id="toastNotification" class="toast-notification">
+      Product added to cart!
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>

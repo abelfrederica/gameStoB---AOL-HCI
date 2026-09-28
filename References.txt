@@ -1,0 +1,9 @@
+Website ini menggunakan beberapa referensi dari sumber terpercaya yang dapat diakses melalui link berikut:
+- https://www.gsshop.id/home
+- https://store.epicgames.com/?lang=id
+- https://store.steampowered.com/
+
+Gambar game product yang ditampilkan di website ini menggunakan referensi dari:
+- Google (gambar asli produk, namun kualitas visual kurang optimal)
+- AI Generated (gambar produk hasil generated AI untuk memperindah tampilan dan meningkatkan kualitas visual dari google)
+

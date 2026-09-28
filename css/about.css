@@ -1,0 +1,330 @@
+.about-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 8%;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+
+  width: 350px;
+  height: 150px;
+
+  background: #7d5cff;
+
+  filter: blur(120px);
+
+  top: -50px;
+  left: 50%;
+
+  transform: translateX(-50%);
+  opacity: 0.25;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.about-hero span {
+  color: #d4b3ff;
+}
+
+.about-hero p {
+  max-width: 800px;
+  margin: auto;
+  color: #bdbdbd;
+  line-height: 1.8;
+  position: relative;
+}
+
+.stats-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background: #161d2f;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  border-radius: 15px;
+
+  padding: 25px;
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 0 20px rgba(125, 92, 255, 0.3);
+}
+
+.stat-card i {
+  color: #d4b3ff;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.stat-card h2 {
+  color: #d4b3ff;
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  color: #a8a8a8;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.mission-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+
+  margin-bottom: 40px;
+}
+
+.info-box {
+  background: linear-gradient(135deg, #141a29, #0d1323);
+
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.info-box h3 {
+  margin-bottom: 15px;
+}
+
+.info-box i {
+  color: #00e1ff;
+  margin-right: 10px;
+}
+
+.info-box p {
+  color: #bdbdbd;
+  line-height: 1.8;
+}
+
+.journey {
+  margin-bottom: 40px;
+}
+
+.journey h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+.timeline::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  top: 0;
+
+  width: 3px;
+  height: 100%;
+
+  background: linear-gradient(#d4b3ff, #00e1ff);
+
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+.timeline-item::after {
+  content: "";
+
+  position: absolute;
+
+  width: 14px;
+  height: 14px;
+
+  background: #d4b3ff;
+
+  border-radius: 50%;
+
+  top: 35px;
+
+  box-shadow:
+    0 0 10px #d4b3ff,
+    0 0 20px #d4b3ff;
+}
+
+.timeline-item.left::after {
+  right: -7px;
+}
+
+.timeline-item.right::after {
+  left: -7px;
+}
+
+.timeline-content {
+  background: #161d2f;
+
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  border-radius: 12px;
+
+  padding: 20px;
+}
+
+.timeline-content h4 {
+  color: #00e1ff;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  color: #bdbdbd;
+  line-height: 1.6;
+}
+
+.values {
+  margin-bottom: 40px;
+}
+
+.values h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.value-card {
+  background: #161d2f;
+
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  border-radius: 15px;
+
+  padding: 30px;
+
+  transition: 0.3s;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 0 20px rgba(125, 92, 255, 0.2);
+}
+
+.value-card i {
+  color: #d4b3ff;
+  font-size: 1.5rem;
+
+  margin-bottom: 15px;
+}
+
+.value-card h3 {
+  margin-bottom: 15px;
+}
+
+.value-card p {
+  color: #bdbdbd;
+  line-height: 1.7;
+}
+
+.community {
+  text-align: center;
+  position: relative;
+}
+
+.community::before {
+  content: "";
+
+  position: absolute;
+
+  width: 400px;
+  height: 150px;
+
+  background: #7d5cff;
+
+  filter: blur(130px);
+
+  left: 50%;
+  bottom: 0;
+
+  transform: translateX(-50%);
+
+  opacity: 0.15;
+}
+
+.community h2 {
+  margin-bottom: 20px;
+}
+
+.community p {
+  max-width: 800px;
+  margin: auto;
+  color: #bdbdbd;
+  line-height: 1.8;
+}
+
+.community-stats {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+
+  margin-top: 50px;
+}
+
+.community-card {
+  background: #161d2f;
+
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  border-radius: 15px;
+
+  min-width: 220px;
+
+  padding: 30px;
+}
+
+.community-card h3 {
+  color: #d4b3ff;
+  font-size: 2rem;
+
+  margin-bottom: 10px;
+}
+
+.community-card span {
+  color: #bdbdbd;
+  font-size: 0.85rem;
+}

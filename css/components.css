@@ -1,0 +1,479 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 9999;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 8%;
+
+  background: rgba(13, 19, 35, 0.95);
+  backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.logo h2 {
+  color: #d4b3ff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  color: #d8d8d8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: #d4b3ff;
+}
+
+.nav-links a.active {
+  color: #d4b3ff;
+}
+
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+
+  width: 100%;
+  height: 2px;
+
+  background: #d4b3ff;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-icon {
+  font-size: 1.3rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header-icon:hover {
+  color: #d4b3ff;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+
+  background: #d4b3ff;
+  color: black;
+
+  display: none;
+
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: #7d5cff;
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px #7d5cff;
+}
+
+.btn-secondary {
+  background: #00e1ff;
+  color: black;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-3px);
+}
+
+.game-card {
+  background: #161d2f;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.game-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(125, 92, 255, 0.4);
+}
+
+.game-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.game-info {
+  padding: 20px;
+}
+
+.game-info h3 {
+  margin-bottom: 10px;
+}
+
+.genre {
+  color: #00e1ff;
+}
+
+.price {
+  margin-top: 15px;
+  color: #7d5cff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.location-card {
+  background: #161d2f;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.location-card:hover {
+  transform: translateY(-5px);
+}
+
+.location-info {
+  padding: 20px;
+}
+
+.store-time {
+  color: #00e1ff;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #222b40;
+  color: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: 2px solid #00e1ff;
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-box {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50px;
+  background: #161d2f;
+  color: white;
+}
+
+.platform-btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  background: #2b2c39;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.platform-btn:hover {
+  transform: translateY(-2px);
+}
+
+.platform-btn.active {
+  background: #d4b3ff;
+  color: black;
+  box-shadow: 0 0 20px #c48fff;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+}
+
+.badge-rpg {
+  background: #7d5cff;
+}
+
+.badge-action {
+  background: #ff4d6d;
+}
+
+.badge-fps {
+  background: #00e1ff;
+  color: black;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+}
+
+.section-title span {
+  color: #00e1ff;
+}
+
+.sale-banner {
+  background: linear-gradient(135deg, #7d5cff, #00e1ff);
+
+  border-radius: 25px;
+  padding: 50px;
+  text-align: center;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #161d2f;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.footer-link {
+  display: block;
+  margin-bottom: 10px;
+  color: #cfcfcf;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: #00e1ff;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+}
+
+footer {
+  background: #050514;
+  margin-top: 100px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 60px;
+  padding: 70px 8%;
+}
+
+.footer-brand h2 {
+  color: #d4b3ff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.footer-brand p {
+  color: #bdbdbd;
+  line-height: 1.8;
+  max-width: 300px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column h3 {
+  color: white;
+  margin-bottom: 25px;
+}
+
+.footer-column a {
+  color: #bdbdbd;
+  text-decoration: none;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.footer-column a:hover {
+  color: #d4b3ff;
+}
+
+.newsletter-box {
+  display: flex;
+  align-items: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  margin-top: 10px;
+}
+
+.newsletter-box input {
+  flex: 1;
+
+  background: #1a1a2e;
+  border: none;
+
+  padding: 14px;
+  color: white;
+}
+
+.newsletter-box input:focus {
+  outline: none;
+}
+
+.newsletter-box button {
+  border: none;
+  background: #1a1a2e;
+
+  color: #d4b3ff;
+
+  padding: 14px 18px;
+
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+
+  color: #bdbdbd;
+
+  padding: 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.toast-notification {
+  position: fixed;
+  bottom: 100px;
+  right: 25px;
+
+  background: #151d32;
+  color: white;
+
+  padding: 15px 20px;
+  border-radius: 12px;
+
+  border-left: 4px solid #4ade80;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+
+  transition: 0.3s ease;
+
+  z-index: 9999;
+}
+
+.toast-notification.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}

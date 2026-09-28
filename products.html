@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>gameStoB | Products</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/products.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <main class="products-page">
+      <section class="products-hero">
+        <h1>Game Store</h1>
+
+        <p>Discover amazing games at incredible prices</p>
+      </section>
+
+      <section class="filter-section">
+        <div class="filter-box">
+          <div class="platform-filter">
+            <label>Platform</label>
+
+            <div class="platform-buttons">
+              <button class="platform-btn active" data-platform="all">
+                All
+              </button>
+              <button class="platform-btn" data-platform="pc">PC</button>
+              <button class="platform-btn" data-platform="playstation">
+                PlayStation
+              </button>
+              <button class="platform-btn" data-platform="xbox">Xbox</button>
+              <button class="platform-btn" data-platform="nintendo">
+                Nintendo
+              </button>
+              <button class="platform-btn" data-platform="multi">Multi</button>
+            </div>
+          </div>
+
+          <div class="select-group">
+            <div>
+              <label>Genre</label>
+
+              <select id="genreFilter">
+                <option value="all">All</option>
+                <option value="rpg">RPG</option>
+                <option value="action">Action</option>
+                <option value="horror">Horror</option>
+                <option value="fighting">Fighting</option>
+                \
+                <option value="scifi">Sci-Fi</option>
+              </select>
+            </div>
+
+            <div>
+              <label>Sort By</label>
+
+              <select id="sortFilter">
+                <option value="featured">Featured</option>
+                <option value="priceLow">Lowest Price</option>
+                <option value="priceHigh">Highest Price</option>
+                <option value="ratingHigh">Highest Rating</option>
+                <option value="ratingLow">Lowest Rating</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="products-section">
+        <div class="products-grid" id="productsGrid">
+          <div
+            class="product-card"
+            data-name="Cyberpunk 2077"
+            data-price="449500"
+            data-image="images/Banner_Cyberpunk 2077.png"
+            data-genre="rpg"
+            data-platform="pc"
+            data-rating="4.8"
+          >
+            <span class="discount">-50%</span>
+
+            <img src="images/Banner_Cyberpunk 2077.png" alt="Cyberpunk 2077" />
+
+            <div class="product-info">
+              <h3>Cyberpunk 2077</h3>
+
+              <p class="genre">RPG</p>
+
+              <div class="meta">
+                <span class="platform">PC</span>
+                <span class="rating">★ 4.8</span>
+              </div>
+
+              <span class="old-price"> Rp 899.000 </span>
+
+              <div class="price">Rp 449.500</div>
+
+              <button class="btn-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="product-card"
+            data-name="Starfield"
+            data-price="734300"
+            data-image="images/Product_Starfield.png"
+            data-genre="scifi"
+            data-platform="xbox"
+            data-rating="4.8"
+          >
+            <span class="discount">-30%</span>
+
+            <img src="images/Product_Starfield.png" alt="Starfield" />
+
+            <div class="product-info">
+              <h3>Starfield</h3>
+
+              <p class="genre">Sci-Fi</p>
+
+              <div class="meta">
+                <span class="platform">Xbox</span>
+                <span class="rating">★ 4.8</span>
+              </div>
+
+              <span class="old-price"> Rp 1.049.000 </span>
+
+              <div class="price">Rp 734.300</div>
+
+              <button class="btn-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="product-card"
+            data-name="Elden Ring"
+            data-price="749000"
+            data-image="images/Product_Elden Ring.png"
+            data-genre="action"
+            data-platform="multi"
+            data-rating="4.9"
+          >
+            <img src="images/Product_Elden Ring.png" alt="Elden Ring" />
+
+            <div class="product-info">
+              <h3>Elden Ring</h3>
+
+              <p class="genre">Action</p>
+
+              <div class="meta">
+                <span class="platform">Multi</span>
+                <span class="rating">★ 4.9</span>
+              </div>
+
+              <div class="price">Rp 749.000</div>
+
+              <button class="btn-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="product-card"
+            data-name="The Witcher 3"
+            data-price="179700"
+            data-image="images/Product_The Witcher 3.png"
+            data-genre="rpg"
+            data-platform="pc"
+            data-rating="4.9"
+          >
+            <span class="discount">-70%</span>
+
+            <img src="images/Product_The Witcher 3.png" alt="The Witcher 3" />
+
+            <div class="product-info">
+              <h3>The Witcher 3</h3>
+
+              <p class="genre">RPG</p>
+
+              <div class="meta">
+                <span class="platform">PC</span>
+                <span class="rating">★ 4.9</span>
+              </div>
+
+              <span class="old-price"> Rp 599.000 </span>
+
+              <div class="price">Rp 179.700</div>
+
+              <button class="btn-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="product-card"
+            data-name="Baldur's Gate 3"
+            data-price="899000"
+            data-image="images/Product_Baldur’s Gate 3.png"
+            data-genre="rpg"
+            data-platform="pc"
+            data-rating="4.9"
+          >
+            <img
+              src="images/Product_Baldur’s Gate 3.png"
+              alt="Baldur's Gate 3"
+            />
+
+            <div class="product-info">
+              <h3>Baldur's Gate 3</h3>
+
+              <p class="genre">RPG</p>
+
+              <div class="meta">
+                <span class="platform">PC</span>
+                <span class="rating">★ 4.9</span>
+              </div>
+
+              <div class="price">Rp 899.000</div>
+
+              <button class="btn-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="product-card"
+            data-name="Final Fantasy XVI"
+            data-price="1049000"
+            data-image="images/Product_Final Fantasy XVI.png"
+            data-genre="action"
+            data-platform="playstation"
+            data-rating="4.7"
+          >
+            <img
+              src="images/Product_Final Fantasy XVI.png"
+              alt="Final Fantasy XVI"
+            />
+
+            <div class="product-info">
+              <h3>Final Fantasy XVI</h3>
+
+              <p class="genre">Action</p>
+
+              <div class="meta">
+                <span class="platform">PlayStation</span>
+                <span class="rating">★ 4.7</span>
+              </div>
+
+              <div class="price">Rp 1.049.000</div>
+
+              <button class="btn-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="product-card"
+            data-name="Resident Evil 4"
+            data-price="899000"
+            data-image="images/Product_Resident Evil 4.png"
+            data-genre="horror"
+            data-platform="multi"
+            data-rating="4.8"
+          >
+            <img
+              src="images/Product_Resident Evil 4.png"
+              alt="Resident Evil 4"
+            />
+
+            <div class="product-info">
+              <h3>Resident Evil 4</h3>
+
+              <p class="genre">Horror</p>
+
+              <div class="meta">
+                <span class="platform">Multi</span>
+                <span class="rating">★ 4.8</span>
+              </div>
+
+              <div class="price">Rp 899.000</div>
+
+              <button class="btn-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="product-card"
+            data-name="Street Fighter 6"
+            data-price="674250"
+            data-image="images/Product_Street Fighter 6.png"
+            data-genre="fighting"
+            data-platform="multi"
+            data-rating="4.6"
+          >
+            <span class="discount">-25%</span>
+
+            <img
+              src="images/Product_Street Fighter 6.png"
+              alt="Street Fighter 6"
+            />
+
+            <div class="product-info">
+              <h3>Street Fighter 6</h3>
+
+              <p class="genre">Fighting</p>
+
+              <div class="meta">
+                <span class="platform">Multi</span>
+                <span class="rating">★ 4.6</span>
+              </div>
+
+              <span class="old-price"> Rp 899.000 </span>
+
+              <div class="price">Rp 674.250</div>
+
+              <button class="btn-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="empty-state" id="emptyState">
+          <div class="empty-icon">
+            <span class="error-tag"> 404_NOT_FOUND </span>
+
+            <i class="fa-solid fa-ban"></i>
+          </div>
+
+          <h2>Quest Failed: Game Not Found</h2>
+
+          <p>
+            We couldn't find any games matching your filters. Try changing
+            platform, genre, or sorting options.
+          </p>
+
+          <div class="empty-buttons">
+            <button id="resetFilters" class="empty-btn primary">
+              <i class="fa-solid fa-compass"></i>
+              Browse All Games
+            </button>
+
+            <a href="index.html" class="empty-btn secondary">
+              <i class="fa-solid fa-house"></i>
+              Back to Home
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <a href="purchase.html" class="floating-cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <span id="cartCountFloat"> 0 </span>
+      </a>
+    </main>
+
+    <div id="toastNotification" class="toast-notification">
+      Product added to cart!
+    </div>
+
+    <div id="toast" class="toast"></div>
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/products.js"></script>
+  </body>
+</html>

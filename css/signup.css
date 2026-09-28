@@ -1,0 +1,20 @@
+@import url("login.css");
+
+.checkbox-group {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin: 20px 0;
+
+  color: #9a95ae;
+
+  font-size: 0.9rem;
+}
+
+.checkbox-group input {
+  width: 18px;
+  height: 18px;
+}

@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>gameStoB | Locations</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/locations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <main class="locations-page">
+      <section class="locations-hero">
+        <h1>Our Locations</h1>
+
+        <p>
+          Visit our state-of-the-art gaming stores worldwide. Experience gaming
+          lounges, tournament arenas, and connect with fellow gamers in an
+          immersive next-generation gaming environment.
+        </p>
+      </section>
+
+      <section class="location-stats">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <i class="fa-solid fa-location-dot"></i>
+
+            <h2>100+</h2>
+
+            <span> Global Stores </span>
+          </div>
+
+          <div class="stat-card">
+            <i class="fa-solid fa-globe"></i>
+
+            <h2>50+</h2>
+
+            <span> Countries </span>
+          </div>
+
+          <div class="stat-card">
+            <i class="fa-solid fa-gamepad"></i>
+
+            <h2>500+</h2>
+
+            <span> Gaming Stations </span>
+          </div>
+
+          <div class="stat-card">
+            <i class="fa-regular fa-clock"></i>
+
+            <h2>24/7</h2>
+
+            <span> Select Locations </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="store-features">
+        <div class="feature-card">
+          <i class="fa-solid fa-gamepad"></i>
+
+          <h3>Premium Gaming</h3>
+
+          <p>High-end gaming PCs and latest generation consoles.</p>
+        </div>
+
+        <div class="feature-card">
+          <i class="fa-solid fa-users"></i>
+
+          <h3>Community Events</h3>
+
+          <p>Join tournaments, launches, and meetups.</p>
+        </div>
+
+        <div class="feature-card">
+          <i class="fa-regular fa-clock"></i>
+
+          <h3>Flexible Hours</h3>
+
+          <p>Selected stores are available 24/7.</p>
+        </div>
+      </section>
+
+      <section class="stores-section">
+        <h2 class="section-title">Featured Stores</h2>
+
+        <div class="stores-grid">
+          <article class="store-card">
+            <img src="images/location_Tokyo.png" alt="Tokyo Store" />
+
+            <div class="store-content">
+              <h3>gameStoB Tokyo</h3>
+
+              <p class="city">Tokyo, Japan</p>
+              <p class="address">Akihabara District</p>
+              <p class="hours">Open Daily • 10:00 - 22:00</p>
+            </div>
+          </article>
+
+          <article class="store-card">
+            <img src="images/location_New York.png" alt="New York Store" />
+
+            <div class="store-content">
+              <h3>gameStoB New York</h3>
+
+              <p class="city">New York, USA</p>
+              <p class="address">Manhattan Center</p>
+              <p class="hours">Open Daily • 09:00 - 23:00</p>
+            </div>
+          </article>
+
+          <article class="store-card">
+            <img src="images/location_London.png" alt="London Store" />
+
+            <div class="store-content">
+              <h3>gameStoB London</h3>
+
+              <p class="city">London, UK</p>
+              <p class="address">Oxford Street</p>
+              <p class="hours">Open Daily • 10:00 - 21:00</p>
+            </div>
+          </article>
+
+          <article class="store-card hidden-store">
+            <img src="images/location_Seoul.png" alt="Seoul Store" />
+
+            <div class="store-content">
+              <h3>gameStoB Seoul</h3>
+
+              <p class="city">Seoul, South Korea</p>
+              <p class="address">Gangnam District</p>
+              <p class="hours">Open Daily • 24 Hours</p>
+            </div>
+          </article>
+
+          <article class="store-card hidden-store">
+            <img src="images/location_Berlin.png" alt="Berlin Store" />
+
+            <div class="store-content">
+              <h3>gameStoB Berlin</h3>
+
+              <p class="city">Berlin, Germany</p>
+              <p class="address">Alexanderplatz</p>
+              <p class="hours">Open Daily • 10:00 - 22:00</p>
+            </div>
+          </article>
+
+          <article class="store-card hidden-store">
+            <img src="images/location_Sydney.png" alt="Sydney Store" />
+
+            <div class="store-content">
+              <h3>gameStoB Sydney</h3>
+
+              <p class="city">Sydney, Australia</p>
+              <p class="address">George Street</p>
+              <p class="hours">Open Daily • 09:00 - 23:00</p>
+            </div>
+          </article>
+        </div>
+
+        <button id="toggleStores" class="load-more-btn">View More</button>
+      </section>
+
+      <section class="search-store">
+        <h2>Find a Store Near You</h2>
+
+        <p>Search by city or country</p>
+
+        <div class="search-box">
+          <input
+            type="text"
+            id="storeSearch"
+            placeholder="Enter city or country"
+          />
+
+          <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="searchResult" class="search-result"></div>
+
+        <div id="searchNotFound" class="search-not-found">
+          <div class="notfound-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+
+          <h3>Location Not Found</h3>
+
+          <p>
+            We couldn't find a gameStoB store in that area. Try another city or
+            contact support to suggest a future location.
+          </p>
+
+          <div class="notfound-actions">
+            <a href="support.html" class="btn-primary"> Contact Support </a>
+
+            <a
+              href="https://discord.gg/YOUR_SERVER"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-secondary"
+            >
+              Join Community
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="events-section">
+        <h2>Upcoming Events</h2>
+
+        <div class="events-grid">
+          <div class="event-card">
+            <i class="fa-solid fa-trophy"></i>
+
+            <h3>Valorant Tournament</h3>
+
+            <p>Tokyo Store</p>
+          </div>
+
+          <div class="event-card">
+            <i class="fa-solid fa-futbol"></i>
+
+            <h3>EA FC Championship</h3>
+
+            <p>London Store</p>
+          </div>
+
+          <div class="event-card">
+            <i class="fa-solid fa-users"></i>
+
+            <h3>Community Meetup</h3>
+
+            <p>New York Store</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="upcoming-section">
+        <h2>Upcoming Locations</h2>
+
+        <div class="upcoming-grid">
+          <div class="upcoming-card">
+            <h3>Jakarta</h3>
+
+            <p>Indonesia</p>
+
+            <span> Opening Q3 2026 </span>
+          </div>
+
+          <div class="upcoming-card">
+            <h3>Bangkok</h3>
+
+            <p>Thailand</p>
+
+            <span> Opening Q4 2026 </span>
+          </div>
+
+          <div class="upcoming-card">
+            <h3>Dubai</h3>
+
+            <p>UAE</p>
+
+            <span> Opening Q1 2027 </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="location-cta">
+        <h2>Can't Find a Store Near You?</h2>
+
+        <p>
+          We're constantly expanding across the globe. Let us know where you'd
+          like to see the next gameStoB store.
+        </p>
+
+        <div class="cta-buttons">
+          <a href="support.html" class="btn-primary"> Contact Support </a>
+
+          <a
+            href="https://discord.gg/YOUR_SERVER"
+            target="_blank"
+            class="btn-secondary"
+          >
+            Join Community
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/locations.js"></script>
+  </body>
+</html>

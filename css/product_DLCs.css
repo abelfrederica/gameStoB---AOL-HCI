@@ -1,0 +1,275 @@
+.dlc-page {
+  background: #090812;
+  color: #fff;
+  min-height: 100vh;
+  padding: 50px 6%;
+}
+
+.dlc-hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  height: 800px;
+  margin-bottom: 80px;
+}
+
+.dlc-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(6, 6, 15, 0.85) 0%,
+    rgba(6, 6, 15, 0.55) 40%,
+    rgba(6, 6, 15, 0.15) 100%
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 70px;
+  transform: translateY(-50%);
+  max-width: 600px;
+}
+
+.hero-tag {
+  display: inline-block;
+  background: rgba(199, 168, 255, 0.15);
+  border: 1px solid rgba(199, 168, 255, 0.25);
+  color: #d9c3ff;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  margin-bottom: 15px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  color: #c3c3d1;
+  line-height: 1.8;
+  font-size: 1rem;
+  max-width: 520px;
+  margin-bottom: 25px;
+}
+
+.hero-btn {
+  background: transparent;
+  border: 1px solid #00e5ff;
+  color: #00e5ff;
+  padding: 14px 35px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: #00e5ff;
+  color: #061018;
+}
+
+.dlc-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 35px;
+}
+
+.dlc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.dlc-card {
+  background: #121320;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: 0.3s;
+}
+
+.dlc-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.4);
+}
+
+.dlc-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.dlc-content {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.game-name {
+  display: block;
+  color: #bdbdcc;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.dlc-content h3 {
+  font-size: 1.15rem;
+  line-height: 1.4;
+  min-height: 64px;
+  margin-bottom: 16px;
+}
+
+.dlc-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-top: auto;
+}
+
+.dlc-type {
+  font-size: 0.7rem;
+  background: #2d2f3f;
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: #d5d5dd;
+}
+
+.rating {
+  color: #d9b5ff;
+  font-weight: 700;
+}
+
+.claim-btn {
+  width: 100%;
+  margin-top: 16px;
+
+  background: transparent;
+  border: 1px solid #00e5ff;
+  color: #00e5ff;
+
+  padding: 13px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.claim-btn:hover {
+  background: #00e5ff;
+  color: #061018;
+}
+
+.hidden-dlc {
+  display: none;
+}
+
+.hidden-dlc.show {
+  display: block;
+}
+
+.load-section {
+  margin-top: 50px;
+}
+
+.load-box {
+  text-align: center;
+  border: 1px dashed rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 60px 30px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.load-box i {
+  font-size: 2rem;
+  color: #d9b5ff;
+  margin-bottom: 15px;
+}
+
+.load-box p {
+  color: #b8b8c5;
+  margin-bottom: 25px;
+}
+
+.load-btn {
+  background: #2b273a;
+  color: #e0d5ff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 14px 35px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.load-btn:hover {
+  background: #3b3550;
+}
+
+.download-toast {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+
+  background: #141827;
+  border-left: 4px solid #00e676;
+  border-radius: 12px;
+
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  min-width: 280px;
+  max-width: 350px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+
+  z-index: 9999;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100px);
+
+  transition: 0.35s;
+}
+
+.download-toast.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.download-toast i {
+  font-size: 2rem;
+  color: #00e676;
+}
+
+.download-toast h4 {
+  margin: 0;
+  color: white;
+}
+
+.download-toast p {
+  margin-top: 4px;
+  color: #b8b8c5;
+  font-size: 0.9rem;
+}
